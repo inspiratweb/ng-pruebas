@@ -1,0 +1,14 @@
+<section>
+  index2
+  <a href="" ng-href="#/index">Go to index1</a>
+  <form action="">
+    <input type="radio" name="filter" ng-model="filterColor" value="red" id="red"><label for="red"> RED</label>
+    <input type="radio" name="filter" ng-model="filterColor" value="green" id="green"><label for="green"> GREEN</label>
+  </form>
+  <div class="grid">
+  {{hi}}
+    <div class="grid-box animate" ng-repeat="product in layout.elems | filter: {filter:filterColor}">
+      {{product.name}}
+    </div>
+  </div>
+</section>

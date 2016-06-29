@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FS">
+<head>
+	<meta charset="UTF-8">
+	<title>ANGULAR | First steps</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui' name='viewport' />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <script src="js/vendor/modernizr.min.js"></script>
+
+    <style type="text/css">
+        /**
+         * Hide when Angular is not yet loaded and initialized
+         */
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+          display: none !important;
+        }
+    </style>
+</head>
+<body main-directive ng-cloak ng-controller="LayoutController as layout">
+  <div id="page" class="master_layout">
+    <header class="header">
+      Here is the header
+    </header>
+    <main role="main" class="main_content">
+      <section class="slide" ng-view></section>
+    </main>
+    <footer class="footer">
+      Here is the footer
+    </footer>
+  </div>
+
+	<script src="js/all.js"></script>
+</body>
+</html>
